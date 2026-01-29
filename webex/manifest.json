@@ -1,13 +1,13 @@
 {
   "name": "Textern",
   "description": "Edit text in your favourite external editor!",
-  "homepage_url": "https://github.com/jlebon/textern",
+  "homepage_url": "https://github.com/Rogach/textern",
   "manifest_version": 2,
   "version": "0.8",
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "textern@jlebon.com",
+      "id": "textern@rogach.org",
       "strict_min_version": "57.0"
     }
   },
