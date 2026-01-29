@@ -158,7 +158,7 @@ function setText(id, text) {
     if (e.nodeName == "TEXTAREA") {
         e.value = text;
         /* send input event to make website (p.e. tiddlywiki.com) aware of updated text */
-        e.dispatchEvent(new Event('input', {}));
+        e.dispatchEvent(new Event('input', { bubbles: true }));
     } else if ((e.nodeName == "DIV") && e.contentEditable) {
         if (isSlackMessage(e)) {
             slackSetText(e, text);
