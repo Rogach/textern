@@ -167,6 +167,7 @@ function setText(id, text) {
         } else {
             e.innerText = text;
         }
+        e.dispatchEvent(new Event('input', { bubbles: true }));
     }
     fadeBackground(e);
 }
