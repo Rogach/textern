@@ -97,7 +97,7 @@ function registerText(event) {
         var id = watchElement(e);
         /* don't use href directly to not bring in e.g. url params */
         var simple_url = window.location.hostname + window.location.pathname
-        browser.runtime.sendMessage("textern@jlebon.com", {
+        browser.runtime.sendMessage("textern@rogach.org", {
             type: "register_text",
             id: id,
             text: e.value,
@@ -116,7 +116,7 @@ function registerText(event) {
         } else {
             text = e.innerText;
         }
-        browser.runtime.sendMessage("textern@jlebon.com", {
+        browser.runtime.sendMessage("textern@rogach.org", {
             type: "register_text",
             id: id,
             text: text,
@@ -173,7 +173,7 @@ function setText(id, text) {
 }
 
 function onMessage(message, sender, respond) {
-    if (sender.id != "textern@jlebon.com")
+    if (sender.id != "textern@rogach.org")
         return;
     if (message.type == "set_text")
         setText(message.id, message.text);

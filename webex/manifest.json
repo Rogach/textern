@@ -3,7 +3,7 @@
   "description": "Edit text in your favourite external editor!",
   "homepage_url": "https://github.com/Rogach/textern",
   "manifest_version": 2,
-  "version": "0.8",
+  "version": "0.8.1",
 
   "browser_specific_settings": {
     "gecko": {
