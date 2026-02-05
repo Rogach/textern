@@ -44,7 +44,7 @@ class TmpManager():
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        shutil.rmtree(self.tmpdir)
+        pass
 
     def __contains__(self, relfn):
         return relfn in self._tmpfiles
